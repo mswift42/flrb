@@ -14,13 +14,6 @@ Future<RecipeDetail> fetchRecipeDetail(Uri url) async {
   return RecipeDetail.fromDoc(CKRecipeDetailDocument(doc));
 }
 
-class SearchFilter {
-  final String criterion;
-  final String abbrev;
-
-  const SearchFilter(this.criterion, this.abbrev);
-}
-
 @immutable
 class RecipeSource extends Equatable {
   final String name;

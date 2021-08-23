@@ -1,4 +1,4 @@
-import 'package:flrb/recipe_service.dart' show SearchFilter;
+import 'package:flrb/searchfilter.dart' show SearchFilter;
 import 'package:flutter/material.dart' hide Element;
 import 'package:html/dom.dart';
 import 'package:html/parser.dart';
@@ -35,7 +35,7 @@ class RecipeDetail {
   final List<RecipeIngredient> ingredients;
   final String? method;
 
-  RecipeDetail(
+  const RecipeDetail(
       {this.title,
       this.rating,
       this.difficulty,
