@@ -24,6 +24,6 @@ class RecipeSource extends Equatable {
 }
 
 final List<RecipeSource> sources = [
-  RecipeSource('Chefkoch'),
-  RecipeSource('BBCGF'),
+  const RecipeSource('Chefkoch'),
+  const RecipeSource('BBCGF'),
 ];

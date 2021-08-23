@@ -284,7 +284,7 @@ class RecipeDetailDocument {
   List<RecipeIngredient> ingredients() {
     List<RecipeIngredient> ingredients = [];
     var ingtable = doc.querySelectorAll('.ingredients>tbody>tr');
-    ingtable.forEach((i) {
+    for (var i in ingtable) {
       var amount = i.querySelector('.td-left')!.text.trim();
       var amsplit = amount.split(' ');
       if (amsplit.length > 2) {
@@ -292,7 +292,7 @@ class RecipeDetailDocument {
       }
       var ing = i.querySelector('.td-right')!.text.trim();
       ingredients.add(RecipeIngredient(amount, ing));
-    });
+    }
     return ingredients;
   }
 }
